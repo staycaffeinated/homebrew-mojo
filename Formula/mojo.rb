@@ -4,7 +4,7 @@
 class Mojo < Formula
   desc "A code generator of Spring-based REST services"
   homepage "https://github.com/staycaffeinated/homebrew-mojo/"
-  url "https://github.com/staycaffeinated/homebrew-mojo/mojo-application-shadow-0.1.4.zip"
+  url "https://github.com/staycaffeinated/homebrew-mojo/mojo-application-shadow-0.1.4.tar"
   sha256 "96e158c92acae6ff6f4998f9b764dd9d1c8df46a72baefbcc329b37b1bef3451"
   license "Apache 2.0"
   # Compilation is not needed
@@ -14,7 +14,7 @@ class Mojo < Formula
   def install
     # put the extracted jar into the "private" libexec folder
     #libexec.install Dir["*"]
-    libexec.install "mojo-application-shadow-0.1.4.tar.gz"
+    libexec.install "mojo-application-shadow-0.1.4.tar"
     # create a shell script to launch the jar file in the "public" bin folder
     # The shell script will have the entry 'java -jar mojo-application-all.jar'
     bin.write_jar_script libexec/"mojo-application-shadow/lib/mojo-application-all.jar", "mojo"
