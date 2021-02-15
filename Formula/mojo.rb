@@ -14,10 +14,10 @@ class Mojo < Formula
 
   def install
     # put the extracted jar into the "private" libexec folder
-    libexec.install Dir['*']
+    libexec.install Dir["*"]
     # create a shell script to launch the jar file in the "public" bin folder
     # The shell script will have the entry 'java -jar mojo-application-all.jar'
-    bin.write_jar_script libexec/'mojo-application-shadow/lib/mojo-application-all.jar', 'mojo'
+    bin.write_jar_script libexec/"mojo-application-shadow/lib/mojo-application-all.jar", "mojo"
   end
 
   test do
