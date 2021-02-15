@@ -9,8 +9,6 @@ class MojoApplicationShadow < Formula
   license "Apache 2.0"
   # Compilation is not needed
   bottle :unneeded
-  # The java runtime needs to be java11 or higher
-  depends_on :java => '11+'
 
   # depends_on "cmake" => :build
 
