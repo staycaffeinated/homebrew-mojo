@@ -1,7 +1,7 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class MojoApplicationShadow < Formula
+class Mojo < Formula
   desc "A code generator of Spring-based REST services"
   homepage ""
   url "https://github.com/staycaffeinated/mojo-application-shadow-0.1.4.tar.gz"
