@@ -12,8 +12,9 @@ class Mojo < Formula
 
   def install
     # put the extracted jar into the "private" libexec folder
-    #libexec.install Dir["*"]
-    libexec.install "mojo-application-0.1.4.tar.gz"
+    # homebrew automatically unarchives the tar.gz file for us,
+    # leaving us with the uber jar that gets copied to the install directory
+    libexec.install "mojo-application-0.1.4-all.jar"
     # create a shell script to launch the jar file in the "public" bin folder
     # The shell script will have the entry 'java -jar mojo-application-x.y.z-all.jar'
     bin.write_jar_script libexec/"mojo-application-0.1.4-all.jar", "mojo"
