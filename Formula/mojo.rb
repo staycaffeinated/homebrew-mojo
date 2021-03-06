@@ -1,11 +1,10 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Mojo < Formula
-  desc "A code generator of Spring-based REST services"
+  desc "A code generator for Spring-based REST services"
   homepage "https://github.com/staycaffeinated/homebrew-mojo/"
-  url "https://raw.githubusercontent.com/staycaffeinated/homebrew-mojo/main/mojo-application-0.1.5.tar.gz"
-  sha256 "e776f2b8ce5863540769414b7988f97bbd0a576f57eee05b24ccac103a42c8a3"
+  url "https://raw.githubusercontent.com/staycaffeinated/homebrew-mojo/main/mojo-application-0.1.6.tar.gz"
+  sha256 "0b0a725de967374512a9d199638d22a8afeddc9bdfab4033ca2be72d35b75042"
   license "Apache 2.0"
   # Compilation is not needed
   bottle :unneeded
@@ -14,10 +13,10 @@ class Mojo < Formula
     # put the extracted jar into the "private" libexec folder
     # homebrew automatically unarchives the tar.gz file for us,
     # leaving us with the uber jar that gets copied to the install directory
-    libexec.install "mojo-application-0.1.5-all.jar"
+    libexec.install "mojo-application-0.1.6-all.jar"
     # create a shell script to launch the jar file in the "public" bin folder
     # The shell script will have the entry 'java -jar mojo-application-x.y.z-all.jar'
-    bin.write_jar_script libexec/"mojo-application-0.1.5-all.jar", "mojo"
+    bin.write_jar_script libexec/"mojo-application-0.1.6-all.jar", "mojo"
   end
 
   test do
