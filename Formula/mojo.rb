@@ -4,7 +4,7 @@ class Mojo < Formula
   desc "A code generator for Spring-based REST services"
   homepage "https://github.com/staycaffeinated/homebrew-mojo/"
   url "https://raw.githubusercontent.com/staycaffeinated/homebrew-mojo/main/mojo-application-0.1.7.tar.gz"
-  sha256 "2e243e16425283629c6c25617a481192739d4e32da62ba320ea29e220872bd12 "
+  sha256 "2e243e16425283629c6c25617a481192739d4e32da62ba320ea29e220872bd12"
   license "Apache 2.0"
   # Compilation is not needed
   bottle :unneeded
