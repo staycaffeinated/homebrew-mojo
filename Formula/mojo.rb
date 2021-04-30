@@ -3,8 +3,8 @@
 class Mojo < Formula
   desc "A code generator for Spring-based REST services"
   homepage "https://github.com/staycaffeinated/homebrew-mojo/"
-  url "https://raw.githubusercontent.com/staycaffeinated/homebrew-mojo/main/mojo-application-0.1.8.tar.gz"
-  sha256 "e3b23a91a30bf8d23febd9f31108a6bfbfc0e742bfa730fe646a910227df3c46"
+  url "https://raw.githubusercontent.com/staycaffeinated/homebrew-mojo/main/mojo-application-0.1.9.tar.gz"
+  sha256 "909644c77cf9da137a39835bbccbbc2e45d467bd21556aefb7cd8af9f2861493"
   license "Apache 2.0"
   # Compilation is not needed
   bottle :unneeded
@@ -13,10 +13,10 @@ class Mojo < Formula
     # put the extracted jar into the "private" libexec folder
     # homebrew automatically unarchives the tar.gz file for us,
     # leaving us with the uber jar that gets copied to the install directory
-    libexec.install "mojo-application-0.1.8-all.jar"
+    libexec.install "mojo-application-0.1.9-all.jar"
     # create a shell script to launch the jar file in the "public" bin folder
     # The shell script will have the entry 'java -jar mojo-application-x.y.z-all.jar'
-    bin.write_jar_script libexec/"mojo-application-0.1.8-all.jar", "mojo"
+    bin.write_jar_script libexec/"mojo-application-0.1.9-all.jar", "mojo"
   end
 
   test do
