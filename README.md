@@ -12,7 +12,7 @@ brew install mojo
 
 #### Generate a skeleton Spring project
 
-```mojo rest-api create-project --name=[application-name] --base-path=[base-URL] --package=[package-name]```
+```mojo rest-api create-project --framework webmvc --name=[application-name] --base-path=[base-URL] --package=[package-name]```
 
 For example,
 
@@ -26,8 +26,8 @@ For example,
 ### Add routes to the application
 
 ```
-mojo rest-api create-endpoint -route=/wine -resource=Wine
-mojo rest-api create-endpoint -route=/beer -resource=Beer
+mojo rest-api create-endpoint --route /wine --resource Wine
+mojo rest-api create-endpoint --route /beer --resource Beer
 ```
 
 
