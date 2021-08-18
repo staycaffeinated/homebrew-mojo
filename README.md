@@ -16,18 +16,19 @@ brew install mojo
 
 For example,
 
-```mojo rest-api create-project --name=bar-service --base-path=/bar-service --package=org.example.barservice```
+```mojo rest-api create-project --framework webmvc --name=bar-service --base-path=/bar-service --package=org.example.barservice```
 
 #### Generate a project with support for Postgres, TestContainers, and Liquibase
 
 
-```mojo rest-api create-project --name=bar-service --base-path=/bar-service --package=org.example.barservice --support postgres testcontainers liquibase```
+```mojo rest-api create-project --framework webmvc --name=bar-service --base-path=/bar-service --package=org.example.barservice --support postgres testcontainers liquibase```
 
-### Add routes to the application
+### Add resources and their routes to the application
 
 ```
 mojo rest-api create-endpoint --route /wine --resource Wine
 mojo rest-api create-endpoint --route /beer --resource Beer
 ```
 
+For more, see a [Five Minute Tutorial](FiveMinuteTutorial.md)
 
