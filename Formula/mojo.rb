@@ -6,8 +6,6 @@ class Mojo < Formula
   url "https://raw.githubusercontent.com/staycaffeinated/homebrew-mojo/main/mojo-application-0.3.3.tar.gz"
   sha256 "b5c155f7ea9502c4ac1105753aa6350014b3433bd98206361c2208e7b8fe08b0"
   license "Apache 2.0"
-  # Compilation is not needed
-  bottle :unneeded
 
   def install
     # put the extracted jar into the "private" libexec folder
